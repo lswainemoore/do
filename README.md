@@ -21,6 +21,6 @@ run application: `sudo -b ./dist/do_app.app/Contents/MacOS/do_app`
 
 note that for ^ we're not using `open` because sudo doesn't work. annoying!
 
-install in `crontab -e`: `*/10 * * * * pgrep -n "do_app" || ~/<path>/dist/do_app.app/Contents/MacOS/do_app`
+install in `crontab -e`: `*/10 * * * * pgrep -n "do_app" > /dev/null || ~/<path>/dist/do_app.app/Contents/MacOS/do_app`
 
-(pgrep solution from: https://stackoverflow.com/a/30031040)
+(pgrep solution from: https://stackoverflow.com/a/30031040. note that i've added redirect to prevent us from getting mailed the pid.)
