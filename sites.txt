@@ -4,3 +4,6 @@ facebook.com
 www.facebook.com
 twitter.com
 news.ycombinator.com
+linkedin.com
+www.linkedin.com
+fantasy.espn.com
