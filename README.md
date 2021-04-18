@@ -1,3 +1,14 @@
+## Huh??
+
+Basically, [Self Control](https://selfcontrolapp.com/) + timer interface.
+
+Also uses [rumps](https://github.com/jaredks/rumps), which I found out about from this handy article: https://camillovisini.com/article/create-macos-menu-bar-app-pomodoro/.
+
+Use at your own risk!! Touches /etc/hosts and uses sudo, etc.
+
+
+## Installation
+
 set up db: `sqlite3 do.db < schema.sql`
 
 build application: `python setup.py py2app -A`

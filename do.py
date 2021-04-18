@@ -50,6 +50,8 @@ def write_with_newline(f, line):
 
 
 def flush_dns_cache():
+    # a little unclear if this is actually useful.
+    # https://superuser.com/a/346519
     os.system('sudo dscacheutil -flushcache')
 
 
@@ -100,6 +102,7 @@ def block_sites(duration=BLOCK_DEFAULT):
 
 def unblock_sites():
     # basically just remove the block.
+    # tmp file pattern from: https://stackoverflow.com/a/26912445
     with open(HOSTS_FILE, 'r') as f:
         with open(TMP_HOSTS_FILE, 'w') as g:
             copying = True
