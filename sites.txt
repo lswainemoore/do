@@ -7,3 +7,7 @@ news.ycombinator.com
 linkedin.com
 www.linkedin.com
 fantasy.espn.com
+pitchfork.com
+amazon.com
+etsy.com
+ebay.com
