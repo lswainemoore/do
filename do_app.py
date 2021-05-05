@@ -2,7 +2,7 @@ import rumps
 
 import do
 
-# rumps.debug_mode(True)
+rumps.debug_mode(True)
 
 
 class DoStatusBarApp(rumps.App):
@@ -47,6 +47,7 @@ class DoStatusBarApp(rumps.App):
                         message='BREAK elapsed',
                         ok='let\'s do',
                         cancel='i\'m done',
+                        dimensions=(0, 0),    # removes text box
                     )
                     resp = window.run()
                     if resp.clicked == 1:
